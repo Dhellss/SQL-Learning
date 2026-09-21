@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SQDhell | Learn SQL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Lexend:wght@300;350;400;500;600;650&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open lesson list" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="#/" aria-label="SQDhell, home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="3" width="28" height="26" rx="7" fill="var(--jade)"/><path d="M8 11h16M8 16h16M8 21h16M15 9v15" stroke="var(--jade-ink)" stroke-width="2" stroke-linecap="round" opacity=".9"/><rect x="17" y="18" width="7" height="4.5" rx="1" fill="var(--mark)"/></svg>
+    SQDhell
+  </a>
+  <nav class="nav" aria-label="Main menu">
+    <a href="#/lesson/intro" data-nav="lesson">Lessons</a>
+    <a href="#/playground" data-nav="playground">Playground</a>
+    <a href="#/reference" data-nav="reference">Quick reference</a>
+  </nav>
+  <div class="top-r">
+    <div class="pill" title="Completed lessons"><span class="txt">Progress</span><span class="bar"><i id="prog-bar"></i></span><span id="prog-txt">0/20</span></div>
+  </div>
+</div></header>
+<div id="app"></div>
+<nav class="bottom-nav" aria-label="Mobile menu">
+  <a href="#/" data-nav="home">Home</a>
+  <a href="#/lesson/intro" data-nav="lesson">Lessons</a>
+  <a href="#/playground" data-nav="playground">Playground</a>
+  <a href="#/reference" data-nav="reference">Reference</a>
+</nav>
+<script src="js/vendor/sql-asm.js"></script>
+<script src="js/lessons.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
